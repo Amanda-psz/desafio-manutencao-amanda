@@ -1,3 +1,7 @@
+function mensagemBotao() {
+        alert("O alvo das soluções!")
+}
+
 function acionandoBotao() {
-        alert("O botão foi clicado!");
+        alert("Contrate já os nossos serviços!");
 }

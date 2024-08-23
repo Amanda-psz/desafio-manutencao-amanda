@@ -4,57 +4,98 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="description" content="Conheça um pouco sobre a empresa XPTO">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Site XPTO</title>
+  <meta name="keyworks" content="tecnologia, solucões-tecnológicas, time-capacitado, apaixonados-por-sucesso, especialistas, alvo">
+  <link rel="shortcut icon" href="./assets/icone-alvo.jpeg" type="icon">
   <link rel="stylesheet" href="css/styles.css" />
+  <title>Site XPTO</title>
 </head>
 
 <body>
-  <header>
-    <section class="seccao-banner">
-       <img
-        src="https://vooozer.com/wp-content/uploads/2018/10/exemplo-marketing-de-relacionamento.png" 
-        alt="desenho de uma pessoal apontando um arco e fecha para um alvo" 
-        title="desenho de uma pessoal apontando um arco e fecha para um alvo"
-      />
-      <h1>Site XPTO</h1>
-    </section>
+  <header class="container-topo">
+    <main class="topo seccao-limite">
+      <div class="topo-logo">
+        <h1 onmouseout="mensagemBotao()">XPTO</h1>
+        <p>Soluções tecnológicas</p>
+      </div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#quem-somos">Quem somos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </main>
   </header>
-  <main class="seccao-limite">
-    <section class="quem-somos-container">
-      <h2 class="titulo-seccao">Quem somos</h2>
+
+  <main class="container-principal">
+    <section class="seccao-banner">
+        <h2></h2>
+    </section>
+
+    <section id="quem-somos" class="seccao-limite seccao-quem-somos">
+      <h2>Quem somos</h2>
       <p>
-        Somos XPTO, atuamos com isso, isso e aquilo a muitos anos no mercado, contrate já!
+        Nós, da XPTO soluções tecnológicas, estamos no mercado há muitos anos, oferecendo serviços especializados em
+        tecnologia, com que há de mais atual no mercado. Nossa trajetória é marcada pela excelência e compromisso, nossa
+        empresa se dedica a entregar soluções de qualidade que atendem às necessidades dos nossos clientes. Confie em
+        nossa experiência e expertise para alcançar os melhores resultados. Contrate já e experimente o diferencial que
+        só a XPTO pode oferecer!
       </p>
       <div class="container-botao">
-        <button class="botao" onclick="acionandoBotao()">Contrate</button>
+        <button onclick="acionandoBotao()">Contrate</button>
       </div>
     </section>
-    <section class="quem-somos-detaque">
+
+    <section class="seccao-limite">
       <div class="texto-destaque">
         <h3>Interessado?</h3>
         <span>Vem ser XPTO</span>
       </div>
-      <div class="detalhes-quem-somos">
-        <ul>
-          <li>
-            <img class="icone" src="assets/icone seta.png" alt="icone de seta" title="icone de seta">
-            <h3>Somos especialistas;</h3>
-          </li>
-          <li>
-            <img class="icone" src="assets/icone seta.png" alt="icone de seta" title="icone de seta">
-            <h3>Time capacitado;</h3>
-          </li>
-          <li>
-            <img class="icone" src="assets/icone seta.png" alt="icone de seta" title="icone de seta">
-            <h3>Apaixonados pelo sucesso.</h3>
-          </li>
-        </ul>
+    </section>
+
+    <section class="seccao-limite">
+      <div class="conteiner-detalhes-quem-somos">
+        <img class="img-quem-somos" src="assets/especialistas.png" alt="Equipe de especialistas"
+          title="Equipe de especialistas">
+        <div>
+          <h3 class="texto-detalhe-quem-somos">Somos especialistas</h3>
+          <p>Na XPTO soluções tecnológicas, nosso sucesso é impulsionado por uma equipe de especialistas altamente
+            qualificados e dedicados. Cada membro da equipe traz uma combinação única de conhecimentos, habilidades e
+            experiência, permitindo que enfrentemos os desafios mais complexos e ofereçamos soluções inovadoras aos
+            nossos clientes.</p>
+        </div>
+      </div>
+      <div class="conteiner-detalhes-quem-somos">
+        <div>
+          <h3 class="texto-detalhe-quem-somos">Time capacitado</h3>
+          <p>
+            Além de suas qualificações técnicas, nossos especialistas se destacam pelo compromisso com a excelência e a
+            busca contínua por conhecimento. Participam regularmente de treinamentos, workshops e conferências,
+            garantindo que estejam sempre atualizados com as últimas tendências e inovações em suas respectivas áreas.
+          </p>
+        </div>
+        <img class="img-quem-somos" src="assets/time-capacitado.jpeg" alt="Time capacitado" title="Time capacitado" id="img-time-capacitado">
+      </div>
+      <div class="conteiner-detalhes-quem-somos">
+        <img class="img-quem-somos" src="assets/apaxionados-sucesso.png" alt="icone de seta" title="icone de seta">
+        <div>
+          <h3 class="texto-detalhe-quem-somos">Apaixonados pelo sucesso</h3>
+          <p>
+            Assim na XPTO soluções tecnológicas, promovemos a diversidade de pensamento, incentivando um ambiente onde
+            criatividade e inovação prosperam. Nossa equipe é movida por uma paixão pelo sucesso, transformando desafios
+            em oportunidades e construindo relações de confiança com nossos clientes. Com profissionais dedicados e
+            visionários, estamos certos de que continuaremos a entregar resultados excepcionais e a superar
+            expectativas, vendo o sucesso como uma jornada contínua de inovação e crescimento.
+          </p>
+        </div>
       </div>
     </section>
   </main>
-  <footer class="seccao-limite">
-    <h2 class="titulo-seccao">Contato</h2>
+
+  <footer id="contato" class="seccao-limite rodape">
+    <div>
+      <h2>Contato</h2>
+    </div>
     <ul class="redes-sociais">
       <li>
         <img class="icone" src="assets/icone facebook.png" alt="Ícone facebook" title="Ícone facebook" />

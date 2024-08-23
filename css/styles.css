@@ -11,43 +11,82 @@
     margin: 0 auto;
 }
 
-.titulo-seccao {
-    font-size: 34px;
-    text-align: center;
-    padding: 10px 0;
+/* seção topo */
+.container-topo {
+    width: 100%;
     background-color: #87c3bc;
 }
 
-.icone {
-    width: 40px;
+.topo {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
 }
 
-/* seccao banner */
-.seccao-banner img {
+.topo-logo {
+    width: 100px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.topo-logo h1 {
+    font-size: 40px;
+    color: #000;
+}
+
+.topo-logo p {
+    font-size: 18px;
+    line-height: 1rem;
+}
+
+.topo nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.topo nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* seção banner */
+.seccao-banner {
     width: 100%;
     height: 65vh;
-    position: relative;
+    background-image: url("../assets/alvo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-h1 {
-    position: absolute;
-    top: 30px;
-    right: 45%;
-    font-size: 40px;
-}
-
-/* seccao quem somos */
-.quem-somos-container p {
-    font-size: 20px;
-    padding: 10px 0;
+/* seção quem somos */
+.seccao-quem-somos {
     text-align: center;
+    padding: 20px 0;
+}
+
+.seccao-quem-somos h2 {
+    padding: 10px 0;
+    font-size: 30px;
+    color: #000;
+}
+
+.seccao-quem-somos p {
+    padding: 10px 0;
+    font-size: 20px;
+    line-height: 1.5rem;
 }
 
 .container-botao {
-    text-align: center;
+    margin: 15px 0;
 }
 
-.botao {
+.container-botao button {
     font-size: 20px;
     font-weight: 600;
     color: #fff;
@@ -59,18 +98,23 @@ h1 {
     cursor: pointer;
 }
 
-.botao:hover {
-    background-color: #52bc59;
+.container-botao button:hover {
+    background-color: #20cfb5;
     color: #000;
 }
 
 .texto-destaque {
+    height: auto;
+    padding: 15px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 4px;
     background-color: #9EE86D;
-    margin: 10px 0;
+}
+
+.texto-destaque h3 {
+    font-size: 24px;
 }
 
 .texto-destaque span {
@@ -79,35 +123,66 @@ h1 {
     font-size: 22px;
 }
 
-.quem-somos-detaque h3 {
-    text-align: center;
-    font-size: 24px;
-    padding: 10px 0;
-}
-
-.quem-somos-detaque h3 span {
-    color: #27cf2d;
-}
-
-.detalhes-quem-somos ul {
-    list-style: none;
-    font-size: 18px;
-    line-height: 1.5rem;
-    padding: 10px 0;
-}
-
-.detalhes-quem-somos li {
+.conteiner-detalhes-quem-somos {
     display: flex;
     align-items: center;
-    gap: 5px;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.img-quem-somos {
+    width: 50%;
+    height: 50vh;
+}
+
+#img-time-capacitado {
+    object-fit: contain;
+}
+
+.conteiner-detalhes-quem-somos div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.texto-detalhe-quem-somos {
+    font-size: 22px;
+    font-weight: 600;
+    color: #000;
+}
+
+.conteiner-detalhes-quem-somos div p {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.5rem;
 }
 
 /* secção rodapé */
+.rodape div {
+    width: 100%;
+    height: auto;
+    padding: 15px 0;
+    background-color: #87c3bc;
+}
+
+.rodape div h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #000;
+}
+
 .redes-sociais {
     display: flex;
     text-align: center;
     justify-content: center;
     gap: 15px;
+}
+
+.icone {
+    width: 25px;
 }
 
 .redes-sociais li {
@@ -130,60 +205,95 @@ h1 {
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
-
-    /* secções globais */
-    body {
-        height: 100vh;
+@media (min-width: 320px) and (max-width: 768px) {
+    /* topo */
+    .topo {
+        justify-content: space-around;
+    }
+    
+    .topo-logo {
+        width: 80px;
     }
 
-    .seccao-limite {
-        max-width: 500px;
-        width: 100%;
-        height: 53%;
-    }
-
-    .titulo-seccao {
-        font-size: 24px;
-    }
-
-    .icone {
-        width: 30px;
-    }
-
-    /* secção banner */
-    .seccao-banner img {
-        height: 30vh;
-    }
-
-    h1 {
-        position: absolute;
-        top: 20px;
-        left: 40%;
+    .topo-logo h1 {
         font-size: 30px;
     }
 
-    /* secção quem somos */
-    .quem-somos-container p {
-        font-size: 18px;
+    .topo nav a {
+        display: none;
     }
 
-    .botao {
+    /* seção banner */
+    .seccao-banner {
+        height: 40vh;
+    }
+
+    /* seção quem somos */
+    .seccao-quem-somos {
+        padding: 13px 0;
+    }
+
+    .seccao-quem-somos h2 {
+        font-size: 24px;
+    }
+
+    .seccao-quem-somos p {
+        padding: 6px 0;
         font-size: 16px;
+        line-height: 1.15rem;
     }
 
-    .quem-somos-detaque h3 {
+    .texto-destaque {
+        padding: 10px 0;
+    }
+
+    .container-botao {
+        margin: 8px 0;
+    }
+
+    .texto-destaque h3 {
+        font-size: 22px;
+    }
+    
+    .texto-destaque span {
         font-size: 20px;
     }
 
-    .detalhes-quem-somos ul {
+    .conteiner-detalhes-quem-somos {
+        padding: 10px 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .img-quem-somos {
+        display: none;
+    }
+
+    .conteiner-detalhes-quem-somos div {
+        width: 90%;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .texto-detalhe-quem-somos {
+        font-size: 20px;
+    }
+
+    .conteiner-detalhes-quem-somos div p {
         font-size: 16px;
-        line-height: 1rem;
+        text-align: center;
+        line-height: 1.25rem;
     }
 
     /* secção rodapé */
-    .redes-sociais li {
-        margin: 10px 0;
+    .rodape div {
+        padding: 10px 0;
+    }
+    
+    .rodape div h2 {
+        font-size: 22px;
     }
 
     .redes-sociais li a {
@@ -192,8 +302,54 @@ h1 {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+
     /* secções globais */
+    body {
+        height: 100vh;
+    }
+
     .seccao-limite {
-        max-width: 800px;
+        max-width: 750px;
+        width: 100%;
+        height: 18%;
+    }
+
+    /* topo */
+    .topo-logo h1 {
+        font-size: 35px;
+    }
+
+    .topo nav a {
+        font-size: 20px;
+    }
+
+    /* seção banner */
+    .seccao-banner {
+        height: 55vh;
+    }
+
+    /* seção quem somos */
+    .seccao-quem-somos h2 {
+        font-size: 26px;
+    }
+
+    .seccao-quem-somos p {
+        padding: 6px 0;
+        font-size: 18px;
+        line-height: 1.25rem;
+    }
+
+    .img-quem-somos {
+        height: 40vh;
+    }
+
+    .texto-detalhe-quem-somos {
+        font-size: 20px;
+    }
+    
+    .conteiner-detalhes-quem-somos div p {
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.25rem;
     }
 }
