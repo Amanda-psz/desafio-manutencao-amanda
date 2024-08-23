@@ -64,6 +64,10 @@
     background-size: cover;
 }
 
+.seccao-banner:focus {
+    outline: 2px solid #000;
+}
+
 /* seção quem somos */
 .seccao-quem-somos {
     text-align: center;
