@@ -12,6 +12,7 @@
     height: 25%;
 }
 
+/* topo */
 .container-topo {
     width: 100%;
     background-color: #87c3bc;
@@ -114,11 +115,12 @@
 
 .texto-destaque h3 {
     font-size: 24px;
+    font-weight: 500;
 }
 
 .texto-destaque span {
-    color: #495151;
-    font-weight: bold;
+    color: #000;
+    font-weight: 700;
     font-size: 22px;
 }
 
